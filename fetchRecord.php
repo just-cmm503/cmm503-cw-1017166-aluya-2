@@ -10,10 +10,11 @@
 
 function fetchRecord($tableName){
     include "dbConnect.php";
-    //$sql = "select * from "+$tableName;
-    $sql="selet * from users";
+    $sql = "select * from marvelmovies";
+// execute the SQL query
+//$result=mysqli_query($link,$sql);
+    $result=$link->query($sql);
 
-    $result = $link->query($sql);
 
     //while ($row = mysqli_fetch_assoc($result)) {    };
     $fetchRecord_out = json_encode($result);
