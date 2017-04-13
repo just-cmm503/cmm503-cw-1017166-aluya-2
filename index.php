@@ -7,7 +7,7 @@
  */
 include "dbConnect.php";
 
-$sql = "select name from users where id = ?";
+$sql = "select * from users where id = ?";
 $usrs_v=2;
 // execute the SQL query
 //$result=mysqli_query($link,$sql);
@@ -37,7 +37,7 @@ for ($i=0; $i< $stmt->columnCount();$i++){
 }
 print "</div>";
 
-print $stmt->fetchAll();
+print  $stmt->fetchAll();
 /*
 while($row = $stmt->fetchAll())
 {
