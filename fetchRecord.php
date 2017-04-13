@@ -9,13 +9,12 @@
 include "dbConnect.php";
 
 function fetchRecord($tableName){
-    $sql = "select * from $tableName";
+    $sql = "select * from "+$tableName;
 
     $result = $link->query($sql);
 
-    while ($row = mysqli_fetch_assoc($result)) {
-    };
-    $fetchRecord_out = json_encode ($result);
+    //while ($row = mysqli_fetch_assoc($result)) {    };
+    $fetchRecord_out = json_encode($result);
     $result->close();
     $link->close();
     return $fetchRecord_out;
