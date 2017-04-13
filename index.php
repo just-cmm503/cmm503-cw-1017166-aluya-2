@@ -14,7 +14,7 @@ print "
 
 <body>
 
-(fetchRecord('users'))
+{fetchRecord('users')}
 
 </body>
 </html>
