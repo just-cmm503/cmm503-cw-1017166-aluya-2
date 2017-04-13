@@ -15,7 +15,7 @@ function fetchRecord($tableName){
 
     while ($row = mysqli_fetch_assoc($result)) {
     };
-    $fetchRecord_out = json_decode($result);
+    $fetchRecord_out = json_encode ($result);
     $result->close();
     $link->close();
     return $fetchRecord_out;
