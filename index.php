@@ -38,6 +38,7 @@ for ($i=0; $i< $stmt->columnCount();$i++){
 print "</div>";
 
 print  $stmt->fetchAll();
+print $stmt;
 /*
 while($row = $stmt->fetchAll())
 {
