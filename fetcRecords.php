@@ -5,9 +5,9 @@
  * Date: 13/04/2017
  * Time: 22:18
  */
+include "dbConnect.php";
 
 function fetchRecords($tableName){
-    include "dbConnect.php";
 
     $sql = "select * from users";
 
