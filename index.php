@@ -37,11 +37,12 @@ for ($i=0; $i< $stmt->columnCount();$i++){
 }
 print "</div>";
 
-
+print $stmt->fetchAll();
+/*
 while($row = $stmt->fetchAll())
 {
     /* the code inside here is repeated for each item in the array
-    You can do things like the following to print out each movie title */
+    You can do things like the following to print out each movie title *
     print " <div class='row'> \r\n";
     $count1=0;
     foreach ($row as $col){
@@ -54,7 +55,7 @@ while($row = $stmt->fetchAll())
     }
 
     print " </div> \r\n";
-}
+} */
 $stmt->closeCursor();
 $conn=null;
 
