@@ -13,7 +13,7 @@
 
 <body>
 
-<?php print fetchRecord('users'); ?>
+<?php print fetchRecord('users') + " ... \r\n "; ?>
 
 </body>
 </html>
