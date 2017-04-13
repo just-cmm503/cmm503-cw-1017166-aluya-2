@@ -6,5 +6,5 @@
  * Time: 13:06
  */
 require_once "dbConnect.php";
-print fetchRecords('users',$link);
+print json_decode(fetchRecords('users',$link));
 ?>
