@@ -38,7 +38,7 @@ for ($i=0; $i< $stmt->columnCount();$i++){
 print "</div>";
 
 $x=$stmt->fetchAll();
-print " $x[0]  $x(1) $x(2)";
+print " $x[0]  $x[1] $x(2)";
 /*
 while($row = $stmt->fetchAll())
 {
