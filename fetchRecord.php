@@ -9,7 +9,7 @@
 include "dbConnect.php";
 
 function fetchRecord($tableName){
-    $sql = "select * from users";
+    $sql = "select * from $tableName";
 
     $result = $link->query($sql);
 
