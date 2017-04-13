@@ -17,7 +17,7 @@ $usrs_v=2;
 
 //$sql_insert = "INSERT INTO registration_tbl (name, email, date)                     VALUES (?,?,?)";
 $stmt = $conn->prepare($sql);
-$stmt->bindValue(1, $usrs_v);
+$stmt->bindValue(1,$usrs_v);
 //$stmt->bindValue(2, $email);
 //$stmt->bindValue(3, $date);
 $stmt->execute();
