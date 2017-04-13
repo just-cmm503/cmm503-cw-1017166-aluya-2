@@ -46,7 +46,7 @@ while($row = $stmt->fetchAll())
     $count1=0;
     foreach ($row as $col){
         $count1++;
-        if (($count1 % 2)==0) {
+        if (($count1 % 2)!=180) {
             print " <div class='col'> \r\n";
             print "  $col  ";
             print " </div> \r\n";
