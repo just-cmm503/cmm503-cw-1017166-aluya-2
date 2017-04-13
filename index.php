@@ -31,12 +31,12 @@ $sql = "select * from users";
 //$result=mysqli_query($link,$sql);
 $result=$link->query($sql);
 
-$hRow=mysqli_fetch_assoc($result);
+$hRow=mysqli_fetch_fields($result);
 print "<div class='cHr'>";
 for ($i=0; $i< mysqli_num_fields($result);$i++){
 
     print "<div class='cH'>";
-    print "   $hRow($i)  ";
+    print "   $hRow[$i]  ";
     print "</div>";
 }
 print "</div>";
