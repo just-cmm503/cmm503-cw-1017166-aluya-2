@@ -5,8 +5,7 @@
  * Date: 13/04/2017
  * Time: 13:06
  */
-
-print "
+?>
 <html>
 <head> 
 <title>Justice's Course Work</title>
@@ -14,9 +13,7 @@ print "
 
 <body>
 
-{fetchRecord('users')}
+<?php print fetchRecord('users'); ?>
 
 </body>
 </html>
-";
-?>
