@@ -32,17 +32,17 @@ $sql = "select * from users";
 $result=$link->query($sql);
 
 $hRow=mysqli_fetch_fields($result);
-print "<div class='cHr'>";
+/* print "<div class='cHr'>";
 for ($i=0; $i< mysqli_num_fields($result);$i++){
 
     print "<div class='cH'>";
-    print "   $hRow[$i]  ";
+    print "   $hRow($i)  ";
     print "</div>";
 }
 print "</div>";
+*/
 
-
-while($row = $result->fetch_array())
+while($row = mysqli_fetch_assoc($result))
 {
     /* the code inside here is repeated for each item in the array
     You can do things like the following to print out each movie title */
