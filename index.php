@@ -7,7 +7,7 @@
  */
 include "dbConnect.php";
 
-$sql = "select name from administrators where id = ?";
+$sql = "select name from users where id = ?";
 $usrs_v=2;
 // execute the SQL query
 //$result=mysqli_query($link,$sql);
