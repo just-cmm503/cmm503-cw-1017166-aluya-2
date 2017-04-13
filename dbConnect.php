@@ -36,7 +36,7 @@
 function fetchRecords($tableName, $link)
 {
 
-    $sql = "select * from users";
+    $sql = "select * from "+$tableName;
 
     $result = $link->query($sql);
     $ret_Res = json_encode($result->fetch_all());
