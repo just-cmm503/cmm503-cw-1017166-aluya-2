@@ -40,7 +40,7 @@ function fetchRecords($tableName, $link)
     //$result->fetchAll();
     $result = $link->query($sql);
     //$ret_Res = json_encode($result->fetch_array());
-    $ret_Res = $result->fetch_all();
+    $ret_Res = $result->fetch_assoc();
     $result->close();
     $link->close();
     return $ret_Res;
