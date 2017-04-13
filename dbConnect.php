@@ -32,4 +32,16 @@
         echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
         exit;
     }
+
+function fetchRecords($tableName, $link)
+{
+
+    $sql = "select * from users";
+
+    $result = $link->query($sql);
+    $ret_Res = json_encode($result->fetch_all());
+    $result->close();
+    $link->close();
+    return $ret_Res;
+}
 ?>

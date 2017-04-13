@@ -5,6 +5,6 @@
  * Date: 13/04/2017
  * Time: 13:06
  */
-require_once "fetcRecords.php";
+require_once "dbConnect.php";
 print fetchRecords('users');
 ?>
