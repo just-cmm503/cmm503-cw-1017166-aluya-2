@@ -39,7 +39,8 @@ function fetchRecords($tableName, $link)
     $sql = "select * from ".$tableName;
 
     $result = $link->query($sql);
-    $ret_Res = json_encode($result->fetch_all());
+    //$ret_Res = json_encode($result->fetch_all());
+    $ret_Res = $result->fetch_all();
     $result->close();
     $link->close();
     return $ret_Res;
