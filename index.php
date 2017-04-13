@@ -29,7 +29,7 @@ include "dbConnect.php";
 $sql = "select * from users";
 
 $result=$link->query($sql);
-print json_encode($result);
+print json_encode($result->fetch_all());
 $result->close();
 $link->close();
 ?>
