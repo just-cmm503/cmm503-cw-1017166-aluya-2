@@ -31,7 +31,7 @@ $sql = "select * from users";
 //$result=mysqli_query($link,$sql);
 $result=$link->query($sql);
 
-$hRow=mysqli_fetch_fields($result);
+$hRow=mysqli_fetch_assoc($result);
 print "<div class='cHr'>";
 for ($i=0; $i< mysqli_num_fields($result);$i++){
 
