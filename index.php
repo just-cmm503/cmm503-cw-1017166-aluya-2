@@ -13,10 +13,9 @@ print "
 </head>
 
 <body>
-";
-print fetchRecord('users');
 
-print "
+(fetchRecord('users'))
+
 </body>
 </html>
 ";
