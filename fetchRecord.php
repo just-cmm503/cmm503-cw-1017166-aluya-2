@@ -6,10 +6,12 @@
  * Time: 21:08
  */
 
-include "dbConnect.php";
+//include "dbConnect.php";
 
 function fetchRecord($tableName){
-    $sql = "select * from "+$tableName;
+    include "dbConnect.php";
+    //$sql = "select * from "+$tableName;
+    $sql="selet * from users";
 
     $result = $link->query($sql);
 
