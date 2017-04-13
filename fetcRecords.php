@@ -5,7 +5,7 @@
  * Date: 13/04/2017
  * Time: 22:18
  */
-include "dbConnect.php";
+require_once "dbConnect.php";
 
 function fetchRecords($tableName){
 
