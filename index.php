@@ -8,7 +8,7 @@
 require_once "dbConnect.php";
 $myJobj= fetchRecords('users',$link);
 //print fetchRecords('users',$link);
-foreach ($myJobj as $row ){
+foreach($row as $myJobj){
     print_r($row);
 }
 ?>

@@ -25,6 +25,12 @@
     }
 //$conn = new PDO( "mysql:host=$connectstr_dbhost;dbname=$connectstr_dbname", $connectstr_dbusername, $connectstr_dbpassword);
 //$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+//$connectstr_dbhost = "127.0.0.1:52543";
+$connectstr_dbhost = "127.0.0.1";
+$connectstr_dbname = "localdb";
+$connectstr_dbusername = "azure";
+$connectstr_dbpassword = "6#vWHD_$";
+
     $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword, $connectstr_dbname);
     if (!$link) {
         echo "Error: Unable to connect to MySQL." . PHP_EOL;
