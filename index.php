@@ -6,6 +6,9 @@
  * Time: 13:06
  */
 require_once "dbConnect.php";
-print fetchRecords('users',$link);
+$myJobj= fetchRecords('users',$link);
 //print fetchRecords('users',$link);
+foreach ($myJobj as $row ){
+    print_r($row);
+}
 ?>
