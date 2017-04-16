@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5a7981b8-c70d-4674-b78c-4e2d777417e7" name="my local" url="http://localhost/cwj">
+        <fileTransfer port="0" mountedRoot="C:\wamp\www\cw-Justice" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

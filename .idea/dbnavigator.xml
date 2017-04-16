@@ -30,6 +30,13 @@
       <console name="Connection" type="STANDARD" />
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="4172fc33-7231-4149-af1a-d5bacb762303" dataset="localdb.users" active-filter-id="">
+      <filter id="2426fddd-2b23-463b-b3ec-43ad38f94446" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ID" operator="=" value="" active="true" />
+      </filter>
+    </filter-list>
+  </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -65,7 +72,7 @@
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
-          <port value="3306" />
+          <port value="52543" />
           <database value="localdb" />
           <os-authentication value="false" />
           <empty-password value="false" />
